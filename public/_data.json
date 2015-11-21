@@ -1,0 +1,44 @@
+{
+    "about": {
+	"title": "Welcome to my about page",
+	"description": "I’m awesome and so are you"
+    },
+    "index": {
+	"title": "This is my home page",
+	"description": "Best home page ever"
+    },
+    "team": {
+	"people": [
+	    {
+		"name": "David Farmer",
+		"institution": "American Institute of Mathematics",
+                "institution-url": "http://aimath.org/",
+		"photograph": "farmer.jpg",
+		"email": "farmer@aimath.org"
+	    },
+	    {
+		"name": "Jim Fowler",
+		"homepage": "http://kisonecat.com/",		
+		"institution": "The Ohio State University",
+                "institution-url": "http://math.osu.edu/",		
+		"photograph": "fowler.jpg",	
+		"email": "fowler@math.osu.edu"
+	    },
+	    {
+		"name": "Sarah Eichhorn",
+		"institution": "University of California, Irvine",
+                "institution-url": "http://unex.uci.edu/",		
+		"photograph": "eichhorn.jpg",			
+		"email": "s.eichhorn@uci.edu"
+	    },
+	    {
+		"name": "Petra Bonfert-Taylor",
+		"homepage": "http://sites.dartmouth.edu/pbonfert/",
+		"institution": "Dartmouth University",
+                "institution-url": "http://engineering.dartmouth.edu/",
+		"photograph": "bonfert-taylor.jpg",
+		"email": "petra.b.taylor@dartmouth.edu"
+	    }
+	]
+    }
+}

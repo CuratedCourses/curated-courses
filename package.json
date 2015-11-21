@@ -1,0 +1,8 @@
+{
+    "name": "curated-courses",
+    "description": "Introduction to the Curated Courses project",
+    "version": "0.0.1",
+    "dependencies": {
+	"bower": "*"
+    }
+}
