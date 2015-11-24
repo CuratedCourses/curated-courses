@@ -5,7 +5,8 @@
     "scripts" :
       {
 	  "install" : "./node_modules/bower/bin/bower install",
-	  "start" : "./node_modules/harp/bin/harp server"
+	  "start" : "./node_modules/harp/bin/harp server",
+	  "deploy" : "source scripts/deploy.sh"
       },
     "dependencies": {
 	"bower": "*",
