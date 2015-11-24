@@ -2,7 +2,8 @@
 *~
 
 # Bower
-public/js/bower
+public/js
+public/css
 node_modules
+bower_components
 www
-
