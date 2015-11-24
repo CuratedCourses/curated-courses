@@ -3,3 +3,6 @@
 
 # Bower
 public/js/bower
+node_modules
+www
+
