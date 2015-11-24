@@ -2,7 +2,10 @@ doctype
 html
   head
     link(rel="stylesheet", href="main.css")
-    title #{title} - Curated Courses
+    if title
+      title #{title} - Curated Courses
+    else
+      title Curated Courses
     meta(name="description" content="#{ description }")
   body
     nav(class="navbar navbar-inverse navbar-fixed-top")
