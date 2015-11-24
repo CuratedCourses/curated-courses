@@ -24,15 +24,15 @@ html
         div(id="navbar",class="navbar-collapse collapse")
           ul.nav.navbar-nav
             li(class="#{ current.source == 'index' ? 'active' : '' }")
-              a(href="/") Home
+              a(href="#") Home
             li(class="#{ current.source == 'about' ? 'active' : '' }")
-              a(href="/about.html") About
+              a(href="about.html") About
             li(class="#{ current.source == 'plan' ? 'active' : '' }")
-              a(href="/plan.html") Plan
+              a(href="plan.html") Plan
             li(class="#{ current.source == 'team' ? 'active' : '' }")
-              a(href="/team.html") Team
+              a(href="team.html") Team
             li(class="#{ current.source == 'events' ? 'active' : '' }")
-              a(href="/events.html") Events
+              a(href="events.html") Events
     if current.source == 'index'
       div.jumbotron
         div.container
