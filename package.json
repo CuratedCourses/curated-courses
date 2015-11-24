@@ -2,7 +2,14 @@
     "name": "curated-courses",
     "description": "Introduction to the Curated Courses project",
     "version": "0.0.1",
+    "scripts" :
+      {
+	  "install" : "./node_modules/bower/bin/bower install",
+	  "start" : "./node_modules/harp/bin/harp server"
+      },
     "dependencies": {
-	"bower": "*"
+	"bower": "*",
+	"harp": "*"
     }
 }
+
