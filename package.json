@@ -4,7 +4,7 @@
     "version": "0.0.1",
     "scripts" :
       {
-	  "install" : "./node_modules/bower/bin/bower install ; cp -R bower_components/bootstrap/dist/css public/css",
+	  "install" : "./node_modules/bower/bin/bower install ; cp -R bower_components/bootstrap/dist/css public/css ; cp -R bower_components/bootstrap/dist/js public/js ; cp -R bower_components/jquery/dist/* public/js",
 	  "start" : "./node_modules/harp/bin/harp server",
 	  "deploy" : "source scripts/deploy.sh"
       },
