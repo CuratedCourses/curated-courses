@@ -1,11 +1,11 @@
 {
     "about": {
-	"title": "Welcome to my about page",
-	"description": "I’m awesome and so are you"
+	"title": "About",
+	"description": ""
     },
     "index": {
-	"title": "This is my home page",
-	"description": "Best home page ever"
+	"title": "Index",
+	"description": ""
     },
     "team": {
 	"people": [
