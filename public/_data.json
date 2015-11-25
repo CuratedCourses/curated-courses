@@ -1,13 +1,38 @@
 {
     "about": {
-	"title": "About",
+	"title": "About the Project",
 	"description": ""
     },
     "index": {
-	"title": "Index",
+	"title": "Home",
 	"description": ""
     },
+    "events": {
+	"title": "Upcoming Events",
+        "events": [
+	    {
+		"start": "2016-01-06T12:00:00.000Z",
+		"end": "2016-01-09T12:00:00.000Z",
+		"name": "Joint Math Meetings",
+		"location": "Seattle, Washington",
+		"url": "http://jointmathematicsmeetings.org/jmm",
+		"text": "Some of the Curated Courses team will be available at booths in the exhibit hall."
+	    },
+	    {
+		"start": "2016-04-25T12:00:00.000Z",
+		"end": "2016-04-29T12:00:00.000Z",
+		"name": " Open textbooks in MathBook XML",
+		"location": "San Jose, California",
+		"url": "http://aimath.org/workshops/upcoming/mathbookxml/",
+		"text": "Some of the Curated Courses team will be working on MathBook XML."
+	    }    
+	]
+    },
+    "plan": {
+	"title": "The Plan"
+    },
     "team": {
+	"title": "The Team",
 	"people": [
 	    {
 		"name": "Petra Bonfert-Taylor",

@@ -1,0 +1,12 @@
+h1 Upcoming Events
+
+p The Curated Courses team will be organizing events at national meetings and at the <a href="http://aimath.org">American Institute of Mathematics</a>.
+
+for event in events
+  hr
+  h2 #{event.name}
+  h3
+    span.moment(data-date=event.start)
+    | &ndash;
+    span.moment(data-date=event.end)
+  p #{event.text}

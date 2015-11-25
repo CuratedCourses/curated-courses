@@ -3,9 +3,11 @@
 ./node_modules/harp/bin/harp compile
 git checkout gh-pages 
 cp www/*.html .
+cp www/*.js .
 cp www/*.css .
 cp -R www/css css
 git add *.html
+git add *.js
 git add *.css
 git add css/*
 git add photographs/*.jpg 
