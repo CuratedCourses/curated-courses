@@ -3,9 +3,9 @@ html
   head
     link(rel="stylesheet", href="main.css")
     if title
-      title #{title} - Curated Courses
+      title #{title} - CuratedCourses
     else
-      title Curated Courses
+      title CuratedCourses
     meta(name="description" content="#{ description }")
     script(src="js/jquery.min.js")
     script(src="js/bootstrap.min.js")
@@ -21,7 +21,7 @@ html
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand(href="index") Curated Courses
+          a.navbar-brand(href="index") CuratedCourses
         div.navbar-collapse.navbar-right.collapse
           ul.nav.navbar-nav
             li
@@ -41,7 +41,7 @@ html
     if current.source == 'index'
       div.jumbotron
         div.container
-          h1 Curated Courses
+          h1 CuratedCourses
           p Collaboratively create and curate math course content.
           p The initial focus is on linear algebra.
           p <a class="btn btn-primary btn-lg" href="about" role="button">Learn more »</a>
@@ -49,5 +49,5 @@ html
       != yield
     footer.footer(role="contentinfo")
       div.container
-        p Curated Courses is an <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1505246">NSF funded project</a>.  Source code available at <a href="https://github.com/kisonecat/curated-courses">GitHub</a>.  Licensed under <a href="https://creativecommons.org/licenses/by/3.0/">CC-BY 3.0</a>.</p>
+        p CuratedCourses is an <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=1505246">NSF funded project</a>.  Source code available at <a href="https://github.com/kisonecat/curated-courses">GitHub</a>.  Licensed under <a href="https://creativecommons.org/licenses/by/3.0/">CC-BY 3.0</a>.</p>
     
