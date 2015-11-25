@@ -11,3 +11,4 @@ git add css/*
 git add photographs/*.jpg 
 git commit -m "Deploying $(date)" 
 git push origin gh-pages
+git checkout master
