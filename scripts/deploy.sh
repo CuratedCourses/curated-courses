@@ -8,9 +8,9 @@ cp www/*.js .
 git add *.js
 cp www/*.css .
 git add *.css
-cp -R www/css css
+cp -R www/css .
 git add css/*
-cp -R www/js js
+cp -R www/js .
 git add js/*
 cp -R www/photographs photographs
 git add photographs/*.jpg 
