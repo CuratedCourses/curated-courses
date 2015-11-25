@@ -6,7 +6,11 @@ h1 The Team
       .thumbnail
         img(src="photographs/#{person.photograph}")
         div.caption
-          h3 #{person.name}
-          h4 #{person.institution}
-          p Biography
+          h3
+            if person.homepage
+              a(href=person.homepage) #{person.name}
+            else
+              | #{person.name}
+          h4
+            a(href=person.institutionUrl) #{person.institution}
 
