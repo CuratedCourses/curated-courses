@@ -12701,13 +12701,16 @@ $(function() {
     var text = $('body').text();
 
     // Extract sentences.
-    var documents = text.match( /[^\.!\?]+[\.!\?]+/g );
+    var documents = text
+	    .replace('{',' ')
+	    .replace('}',' ')
+	    .match( /[^\.!\?]+[\.!\?]+/g );
     
     // Run LDA to get terms for 2 topics (5 terms each).
-    var result = lda(documents, 1, 3);
+    var result = lda(documents, 1, 5); 
     // Run LDA to get terms for 2 topics (5 terms each).
     console.log(result);
 });
 
-}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_6409d545.js","/")
+}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_8632fb3c.js","/")
 },{"../node_modules/lda/lib/lda.js":5,"buffer":2,"jquery":4,"pBGvAp":7}]},{},[11])
