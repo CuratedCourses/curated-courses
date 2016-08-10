@@ -12706,8 +12706,8 @@ $(function() {
     // Run LDA to get terms for 2 topics (5 terms each).
     var result = lda(documents, 1, 3);
     // Run LDA to get terms for 2 topics (5 terms each).
-    alert(result);
+    console.log(result);
 });
 
-}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_a30b4168.js","/")
+}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_6409d545.js","/")
 },{"../node_modules/lda/lib/lda.js":5,"buffer":2,"jquery":4,"pBGvAp":7}]},{},[11])
