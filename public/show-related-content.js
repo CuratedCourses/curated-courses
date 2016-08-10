@@ -12704,6 +12704,9 @@ $(function() {
     var documents = text
 	    .replace(/\{/g,' ')
 	    .replace(/\}/g,' ')
+	    .replace(/newcommand/g,' ')
+	    .replace(/left/g,' ')
+	    .replace(/right/g,' ')
 	    .replace(/\\/g,' ')
 	    .match( /[^\.!\?]+[\.!\?]+/g );
     
@@ -12714,5 +12717,5 @@ $(function() {
     console.log(result);
 });
 
-}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_dca9b76a.js","/")
+}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_37f20fd0.js","/")
 },{"../node_modules/lda/lib/lda.js":5,"buffer":2,"jquery":4,"pBGvAp":7}]},{},[11])
