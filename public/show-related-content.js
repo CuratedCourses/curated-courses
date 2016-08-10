@@ -12717,9 +12717,9 @@ $(function() {
     //console.log(result);
 
     var advertisement = $('<div id="advertisement">HELLO</div>');
-    window.ad = advertisement;
-    //$('div#content').insertBefore( advertisement );
+    advertisement.insertBefore( $('div#content') );
+    window.ad = advertisement; 
 });
 
-}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_2604793b.js","/")
+}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_e5262f0b.js","/")
 },{"../node_modules/lda/lib/lda.js":5,"buffer":2,"jquery":4,"pBGvAp":7}]},{},[11])
