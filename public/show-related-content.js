@@ -12703,15 +12703,16 @@ $(function() {
     // Extract sentences.
     var documents = text
 	    .replace(/\{/g,' ')
-	    .replace(/\}/g,' ')    
+	    .replace(/\}/g,' ')
+	    .replace(/\\/g,' ')
 	    .match( /[^\.!\?]+[\.!\?]+/g );
     
     // Run LDA to get terms for 2 topics (5 terms each).
-    var result = lda(documents, 1, 5 );
+    var result = lda(documents, 2, 3 );
 
     // Run LDA to get terms for 2 topics (5 terms each).
     console.log(result);
 });
 
-}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_3ff1ab44.js","/")
+}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_dca9b76a.js","/")
 },{"../node_modules/lda/lib/lda.js":5,"buffer":2,"jquery":4,"pBGvAp":7}]},{},[11])
