@@ -12718,10 +12718,10 @@ $(function() {
 
     var advertisement = $('<div id="advertisement">HELLO</div>');
     $('main').prepend( advertisement );
-    advertisement.css( 'float: left' );
-    advertisement.css( 'margin-left: 700px' );
+    advertisement.css( 'float', 'left' );
+    advertisement.css( 'margin-left', '700px' );
     window.ad = advertisement; 
 });
 
-}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_73596663.js","/")
+}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_161dd3c.js","/")
 },{"../node_modules/lda/lib/lda.js":5,"buffer":2,"jquery":4,"pBGvAp":7}]},{},[11])
