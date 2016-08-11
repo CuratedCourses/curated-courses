@@ -12227,6 +12227,8 @@ function preventVerticalOverlap(marginBlocks) {
 
 $(function() {
     // All of the following code ASSUMES that we're displaying marginblocks on an MBX page
+
+    var blockCount = 0;
     
     // Walk through all the listed outcomes...
     $('span.curated-courses.outcome').each( function() {
@@ -12234,7 +12236,7 @@ $(function() {
 	var parent = $(this).parents().filter(function() {
 	    return $(this).css("display") === "block";
 	}).first();
-
+	
 	// Find the corresponding marginblock...
 	var id = $(parent).data( 'curated-courses-id' );
 	if ( ! id ) {
@@ -12244,7 +12246,13 @@ $(function() {
 	    block.css( 'position', 'absolute' );
 	    block.css( 'margin-left', '700px' );
 	    block.css( 'margin-top', '0px' );
-	    $(block).uniqueId();
+
+	    // This is a shim for $(block).uniqueId();
+	    if (! ($(block).attr('id')) ) {
+		$(block).attr( 'id', 'cc-id-' + blockCount.toString() );
+		blockCount = blockCount + 1;
+	    }
+	    
 	    id = $(block).attr('id');
 	    $(parent).data( 'curated-courses-id', id );
 	}
@@ -12290,5 +12298,5 @@ $(function() {
     
 });
 
-}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_d5ca4a3e.js","/")
+}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_2a6b9fa0.js","/")
 },{"buffer":2,"jquery":5,"jquery-ui":4,"pBGvAp":6}]},{},[7])
