@@ -12711,7 +12711,7 @@ $(function() {
 	    .match( /[^\.!\?]+[\.!\?]+/g );
     
     // Run LDA to get terms for 2 topics (5 terms each).
-    var result = lda(documents, 2, 3 );
+    //var result = lda(documents, 2, 3 );
  
     // Run LDA to get terms for 2 topics (5 terms each).
     //console.log(result);
@@ -12721,7 +12721,7 @@ $(function() {
     advertisements.css( 'position', 'absolute' );
     advertisements.css( 'margin-left', '700px' );
 
-    var one = $('<div class="ad">The first one!</div>');
+    var one = $('<div class="ad">The first one.</div>');
     advertisements.append( one );
     one.css( 'margin-top', '15pt' );
 
@@ -12729,11 +12729,12 @@ $(function() {
     advertisements.append( two );
     two.css( 'margin-top', '15pt' );
 
-    var three = $('<div class="ad">' + JSON.stringify( result ) + '</div>');
+    //var three = $('<div class="ad">' + JSON.stringify( result ) + '</div>');
+    var three = $('<div class="ad">A third box!</div>');
     advertisements.append( three );
     three.css( 'margin-top', '15pt' );
     
 });
 
-}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_e8bce5ac.js","/")
+}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_19432284.js","/")
 },{"../node_modules/lda/lib/lda.js":5,"buffer":2,"jquery":4,"pBGvAp":7}]},{},[11])
