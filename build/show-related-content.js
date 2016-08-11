@@ -12244,7 +12244,7 @@ $(function() {
 	    var block = $('<div class="curated-courses"></div>');
 	    $(parent).before( block );
 	    block.css( 'position', 'absolute' );
-	    block.css( 'margin-left', '700px' );
+	    block.css( 'margin-left', $(parent).width() );
 	    block.css( 'margin-top', '0px' );
 
 	    // This is a shim for $(block).uniqueId();
@@ -12298,5 +12298,5 @@ $(function() {
     
 });
 
-}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_2a6b9fa0.js","/")
+}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_de5e0985.js","/")
 },{"buffer":2,"jquery":5,"jquery-ui":4,"pBGvAp":6}]},{},[7])
