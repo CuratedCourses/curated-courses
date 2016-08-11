@@ -12721,16 +12721,16 @@ $(function() {
     advertisements.css( 'float', 'left' );
     advertisements.css( 'margin-left', '700px' );
 
-    var one = $('<div id="ad">The first one!</div>');
+    var one = $('<div class="ad">The first one!</div>');
     advertisements.append( one );
     one.css( 'margin-top', '15pt' );
 
-    var one = $('<div id="ad">The second one?</div>');
-    advertisements.append( one );
-    one.css( 'margin-top', '15pt' );
+    var two = $('<div class="ad">The second one?</div>');
+    advertisements.append( two );
+    two.css( 'margin-top', '15pt' );
 
     window.ad = advertisement; 
 });
 
-}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_d8c8c591.js","/")
+}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_27f5a9a.js","/")
 },{"../node_modules/lda/lib/lda.js":5,"buffer":2,"jquery":4,"pBGvAp":7}]},{},[11])
