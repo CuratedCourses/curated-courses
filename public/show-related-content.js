@@ -60,7 +60,8 @@ $(function() {
 		blockCount = blockCount + 1;
 	    }
 
-	    // Marginblocks should know about the parent in the running text
+	    // Marginblocks should know about the parent in the running text...
+	    // BADBAD: This should use uniqueId to enforce a link from the marginblock to the parent
 	    if ($(parent).attr('id')) {
 		$(block).data( 'parent-id', $(parent).attr('id') );
 	    }
@@ -92,6 +93,7 @@ $(function() {
 
 	var link = $('<a></a>');
 	url = window.location;
+	// BADBAD: this should be anchored not necessarily to the parent, but to the tightest section
 	if (block.data('parent-id'))
 	    url = url + "#" + block.data('parent-id');
 	link.text( url );
