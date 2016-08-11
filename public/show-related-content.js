@@ -12718,7 +12718,7 @@ $(function() {
 
     var advertisements = $('<div id="advertisements"></div>');
     $('main').prepend( advertisements );
-    advertisements.css( 'float', 'left' );
+    advertisements.css( 'position', 'absolute' );
     advertisements.css( 'margin-left', '700px' );
 
     var one = $('<div class="ad">The first one!</div>');
@@ -12732,5 +12732,5 @@ $(function() {
     window.ad = advertisement; 
 });
 
-}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_27f5a9a.js","/")
+}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_bebb4ca3.js","/")
 },{"../node_modules/lda/lib/lda.js":5,"buffer":2,"jquery":4,"pBGvAp":7}]},{},[11])
