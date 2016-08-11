@@ -12717,9 +12717,11 @@ $(function() {
     //console.log(result);
 
     var advertisement = $('<div id="advertisement">HELLO</div>');
-    //$('div#content').insertBefore( advertisement );
+    $('main').prepend( advertisement );
+    advertisement.css( 'float: left' );
+    advertisement.css( 'margin-left: 700px' );
     window.ad = advertisement; 
 });
 
-}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_9f632f95.js","/")
+}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_73596663.js","/")
 },{"../node_modules/lda/lib/lda.js":5,"buffer":2,"jquery":4,"pBGvAp":7}]},{},[11])
