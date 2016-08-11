@@ -12252,7 +12252,13 @@ $(function() {
 		$(block).attr( 'id', 'cc-id-' + blockCount.toString() );
 		blockCount = blockCount + 1;
 	    }
-	    
+
+	    // Marginblocks should know about the parent in the running text
+	    if ($(parent).attr('id')) {
+		$(block).data( 'parent-id', $(parent).attr('id') );
+	    }
+
+	    // The running text should know about the marginblock
 	    id = $(block).attr('id');
 	    $(parent).data( 'curated-courses-id', id );
 	}
@@ -12274,29 +12280,24 @@ $(function() {
 	//outcome.css( 'margin-top', '15pt' );
     });
 
+    $('div.curated-courses').each( function() {
+	var block = $(this);
+
+	var link = $('<a></a>');
+	url = window.location;
+	if (block.data('parent-id'))
+	    url = url + "#" + block.data('parent-id');
+	link.text( url );
+	link.attr( 'href', url );
+	link.css( 'display', 'block' );
+	block.append( link );
+	
+    });
+    
     preventVerticalOverlap( $('div.curated-courses') );
     
     
-    /*
-    $('main').prepend( advertisements );
-    advertisements.css( 'position', 'absolute' );
-    advertisements.css( 'margin-left', '700px' );
-
-    var one = $('<div class="ad">The first one.</div>');
-    advertisements.append( one );
-    one.css( 'margin-top', '15pt' );
-
-    var two = $('<div class="ad">The second one?</div>');
-    advertisements.append( two );
-    two.css( 'margin-top', '15pt' );
-
-    //var three = $('<div class="ad">' + JSON.stringify( result ) + '</div>');
-    var three = $('<div class="ad">A third box!</div>');
-    advertisements.append( three );
-    three.css( 'margin-top', '15pt' );
-     */
-    
 });
 
-}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_de5e0985.js","/")
+}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_23c2ce0a.js","/")
 },{"buffer":2,"jquery":5,"jquery-ui":4,"pBGvAp":6}]},{},[7])
