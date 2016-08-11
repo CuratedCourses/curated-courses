@@ -12711,7 +12711,7 @@ $(function() {
 	    .match( /[^\.!\?]+[\.!\?]+/g );
     
     // Run LDA to get terms for 2 topics (5 terms each).
-    //var result = lda(documents, 2, 3 );
+    var result = lda(documents, 2, 3 );
  
     // Run LDA to get terms for 2 topics (5 terms each).
     //console.log(result);
@@ -12729,8 +12729,11 @@ $(function() {
     advertisements.append( two );
     two.css( 'margin-top', '15pt' );
 
-    window.ad = advertisement; 
+    var three = $('<div class="ad">' + JSON.stringify( result ) + '</div>');
+    advertisements.append( three );
+    three.css( 'margin-top', '15pt' );
+    
 });
 
-}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_bebb4ca3.js","/")
+}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_e8bce5ac.js","/")
 },{"../node_modules/lda/lib/lda.js":5,"buffer":2,"jquery":4,"pBGvAp":7}]},{},[11])
