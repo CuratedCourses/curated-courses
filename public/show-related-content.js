@@ -12716,12 +12716,21 @@ $(function() {
     // Run LDA to get terms for 2 topics (5 terms each).
     //console.log(result);
 
-    var advertisement = $('<div id="advertisement">HELLO</div>');
-    $('main').prepend( advertisement );
-    advertisement.css( 'float', 'left' );
-    advertisement.css( 'margin-left', '700px' );
+    var advertisements = $('<div id="advertisements"></div>');
+    $('main').prepend( advertisements );
+    advertisements.css( 'float', 'left' );
+    advertisements.css( 'margin-left', '700px' );
+
+    var one = $('<div id="ad">The first one!</div>');
+    advertisements.append( one );
+    one.css( 'margin-top', '15pt' );
+
+    var one = $('<div id="ad">The second one?</div>');
+    advertisements.append( one );
+    one.css( 'margin-top', '15pt' );
+
     window.ad = advertisement; 
 });
 
-}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_161dd3c.js","/")
+}).call(this,require("pBGvAp"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_d8c8c591.js","/")
 },{"../node_modules/lda/lib/lda.js":5,"buffer":2,"jquery":4,"pBGvAp":7}]},{},[11])
