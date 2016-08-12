@@ -1,5 +1,5 @@
 var $ = require('jquery');
-require('jquery-ui');
+//require('jquery-ui');
 
 function preventVerticalOverlap(marginBlocks) {
     
@@ -33,8 +33,8 @@ function preventVerticalOverlap(marginBlocks) {
 
 
 $(function() {
-    // All of the following code ASSUMES that we're displaying marginblocks on an MBX page
-
+    // All of the following code was written with the assumption that we're displaying marginblocks on an MBX page,
+    // but actually we don't need to make that much of an assumption
     var blockCount = 0;
     
     // Walk through all the listed outcomes...
@@ -51,7 +51,15 @@ $(function() {
 	    var block = $('<div class="curated-courses"></div>');
 	    $(parent).before( block );
 	    block.css( 'position', 'absolute' );
+
+	    // If the parent block is wide (like the width of the
+	    // window!) then this is going to end with our marginblock
+	    // causing a scrollbar to appear; it'd be better to react
+	    // to this and have the marginblock sit in the main body
+	    // text to avoid the scrollbar from appearing.
 	    block.css( 'margin-left', $(parent).width() );
+	    // provide a bit of breathing room
+	    block.css( 'padding-left', '12pt' ); 
 	    block.css( 'margin-top', '0px' );
 
 	    // This is a shim for $(block).uniqueId();
